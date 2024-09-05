@@ -119,7 +119,7 @@ function ExampleSentence() {
           <Pronunciation>{item.sentence}</Pronunciation>
           <p>{item.meaning}</p>
           <div className="flex gap-1 flex-wrap">
-            {item.words.map(word => <Badge variant="destructive">{word}</Badge>)}
+            {item.words.map(word => <Badge variant="destructive" key={word}>{word}</Badge>)}
           </div>
         </Card>
       })}
