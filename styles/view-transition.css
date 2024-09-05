@@ -1,0 +1,9 @@
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+.dark::view-transition-old(root) {
+  z-index: 9999;
+}
