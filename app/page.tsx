@@ -42,7 +42,7 @@ function WordCard() {
       <CardHeader >
         <CardTitle className="flex justify-between items-center">
           本句生词
-          <Refresh/>
+          <Refresh />
         </CardTitle>
       </CardHeader>
       <CardContent>
@@ -115,7 +115,7 @@ function ExampleSentence() {
   return (
     <div className="flex flex-col gap-2">
       {data.map((item, index) => {
-        return <Card className="p-3 rounded-md ">
+        return <Card className="p-3 rounded-md " key={index}>
           <Pronunciation>{item.sentence}</Pronunciation>
           <p>{item.meaning}</p>
           <div className="flex gap-1 flex-wrap">
